@@ -1,5 +1,6 @@
 import streamlit as st
 from pages import food_info
+
 st.markdown(
     """<div style='text-align: center;'> 
     <h1>Swigy</h1> 

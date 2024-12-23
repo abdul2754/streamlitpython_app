@@ -33,11 +33,10 @@ ads = st.text_input("Address")
 if st.button("Submit"):
     if first_name and last_name:
         save_user_details(first_name, last_name, email_input, phone_input, ads)
-        st.session_state.first_name = first_name
-        st.session_state.last_name = last_name
         time.sleep(2)
+        st.switch_page("./pages/food_info.py")
     else:
         st.error("Enter your First name and Last name")
       
-    st.switch_page("./pages/food_info.py")
+    
 
